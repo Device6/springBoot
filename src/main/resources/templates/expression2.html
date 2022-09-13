@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>选择变量表达式</title>
+</head>
+<body>
+    <h3>选择变量表达式: *{key}</h3>
+    <p th:text="${site}"></p>
+    <div th:object="${myuser}">
+        <br>
+        <p>获取User对象 属性值</p>
+        <p th:text="*{id}">id</p>
+        <p th:text="*{username}">username</p>
+        <p th:text="*{sex}">sex</p>
+        <p th:text="*{age}">age</p>
+    </div>
+</body>
+</html>
